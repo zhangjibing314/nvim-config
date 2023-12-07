@@ -27,7 +27,12 @@ keymap.set("n", "<M-h>", ":bprevious<CR>")
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 -- telescope
 local builtin = require('telescope.builtin')
-keymap.set('n', '<C-p>', builtin.find_files, {})
-keymap.set('n', '<C-f>', builtin.live_grep, {})
-keymap.set('n', '<leader>fb', builtin.buffers, {})
-keymap.set('n', '<leader>fh', builtin.help_tags, {})
+keymap.set('n', '<C-p>', builtin.find_files, {}) -- 当前工作目录下模糊搜索文件
+keymap.set('n', '<C-f>', builtin.live_grep, {}) -- 当前文件中模糊搜索字符串
+--keymap.set('n', '<leader>fb', builtin.buffers, {})
+--keymap.set('n', '<leader>fh', builtin.help_tags, {})
+-- lsp.clangd
+vim.api.nvim_set_keymap('n', 'gs', '<cmd>lua vim.lsp.buf.declaration()<CR>', { noremap = true, silent = true }) -- 声明位置
+--vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true }) -- 定义位置
+vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', { noremap = true, silent = true }) -- 实现位置
+vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', { noremap = true, silent = true }) -- 引用位置

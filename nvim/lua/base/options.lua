@@ -20,7 +20,7 @@ opt.cursorline = true
 opt.mouse:append("a")
 
 -- 系统剪贴板
-opt.clipboard:append("unnamedplus")
+opt.clipboard:append("unnamedplus") -- 除了如此配置，还需要安装 xclip 工具(不是插件哦)
 
 -- 默认新窗口右和下
 opt.splitright = true
