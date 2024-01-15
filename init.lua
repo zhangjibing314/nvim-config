@@ -3,10 +3,9 @@ require("base.keymaps")
 
 -- 插件管理器
 require("plugins-manage.manager")
--- 插件
+-- 插件配置
 require("plugins-manage.plugins.lualine")
 require("plugins-manage.plugins.nvim-tree")
-require("plugins-manage.plugins.treesitter")
 require("plugins-manage.plugins.lsp")
 require("plugins-manage.plugins.cmp")
 require("plugins-manage.plugins.comment")
