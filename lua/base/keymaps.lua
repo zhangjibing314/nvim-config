@@ -15,22 +15,16 @@ keymap.set("i", "jl", "<ESC>")
 keymap.set("n", "<leader>s", "<C-w>v") -- 水平新增窗口 
 keymap.set("n", "<leader>v", "<C-w>s") -- 垂直新增窗口
 
--- 取消高亮
---keymap.set("n", "<leader>nh", ":nohl<CR>")
-
--- 切换buffer
-keymap.set("n", "<M-l>", ":bnext<CR>")
-keymap.set("n", "<M-h>", ":bprevious<CR>")
-
 -- ---------- 插件 ---------- ---
+-- bufferline
+keymap.set("n", "<M-l>", ":bnext<CR>") -- 下一个标签页
+keymap.set("n", "<M-h>", ":bprevious<CR>") -- 上一个标签页
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- 打开/关闭目录
 -- telescope
 local builtin = require('telescope.builtin')
-keymap.set('n', '<C-p>', builtin.find_files, {}) -- 当前工作目录下模糊搜索文件
-keymap.set('n', '<C-f>', builtin.live_grep, {}) -- 当前文件中模糊搜索字符串
---keymap.set('n', '<leader>fb', builtin.buffers, {})
---keymap.set('n', '<leader>fh', builtin.help_tags, {})
+keymap.set('n', '<C-p>', builtin.find_files, {})
+keymap.set('n', '<C-f>', builtin.live_grep, {})
 -- lsp.clangd
 vim.api.nvim_set_keymap('n', 'gs', '<cmd>lua vim.lsp.buf.declaration()<CR>', { noremap = true, silent = true }) -- 声明位置
 --vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true }) -- 定义位置
