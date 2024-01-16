@@ -5,10 +5,11 @@ require("base.keymaps")
 require("plugins-manage.manager")
 -- 插件配置
 require("plugins-manage.plugins.lualine")
-require("plugins-manage.plugins.nvim-tree")
+require("plugins-manage.plugins.nvim-tree") -- 目录
 require("plugins-manage.plugins.mason")
+require("plugins-manage.plugins.cmp") -- 代码补全
 require("plugins-manage.plugins.comment")
 require("plugins-manage.plugins.autopairs")
 require("plugins-manage.plugins.bufferline")
 require("plugins-manage.plugins.gitsigns")
-require("plugins-manage.plugins.telescope")
+require("plugins-manage.plugins.telescope") -- 文件&&字符串检索
