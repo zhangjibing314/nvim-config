@@ -14,6 +14,7 @@ keymap.set("i", "jl", "<ESC>")
 -- 窗口
 keymap.set("n", "<leader>s", "<C-w>v") -- 水平新增窗口 
 keymap.set("n", "<leader>v", "<C-w>s") -- 垂直新增窗口
+keymap.set("n", "<leader>d", ":q<CR>") -- 删除当前窗口
 
 -- ---------- 插件 ---------- ---
 -- bufferline
