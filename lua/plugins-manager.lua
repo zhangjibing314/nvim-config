@@ -63,6 +63,7 @@ return require('packer').startup(function(use)
   }
 
   use 'voldikss/vim-translator' -- 翻译插件
+  use "lukas-reineke/indent-blankline.nvim" -- 代码缩进线
 
   if packer_bootstrap then
     require('packer').sync()

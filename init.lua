@@ -15,3 +15,4 @@ require("plugins.bufferline")
 require("plugins.gitsigns")
 require("plugins.telescope") -- 文件&&字符串检索
 require("plugins.translator")
+require("plugins.indent-blankline")
