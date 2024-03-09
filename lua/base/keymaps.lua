@@ -20,6 +20,7 @@ keymap.set("n", "<leader>d", ":q<CR>") -- 删除当前窗口
 -- bufferline
 keymap.set("n", "<M-l>", ":bnext<CR>") -- 下一个标签页
 keymap.set("n", "<M-h>", ":bprevious<CR>") -- 上一个标签页
+keymap.set("n", "<M-d>", ":BufferLineCloseOthers<CR>") -- 关闭其他标签页
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- 打开/关闭目录
 -- telescope
