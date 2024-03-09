@@ -1,5 +1,4 @@
 local opt = vim.opt
-
 -- 行号
 opt.relativenumber = false
 opt.number = true

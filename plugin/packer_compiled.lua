@@ -179,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zhangjibing/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["vim-translator"] = {
+    loaded = true,
+    path = "/home/zhangjibing/.local/share/nvim/site/pack/packer/start/vim-translator",
+    url = "https://github.com/voldikss/vim-translator"
   }
 }
 

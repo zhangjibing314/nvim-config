@@ -18,7 +18,7 @@ local packer_bootstrap = ensure_packer()
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost manager.lua source <afile> | PackerSync
+    autocmd BufWritePost plugins-manager.lua source <afile> | PackerSync
   augroup end
 ]])
 
@@ -59,6 +59,8 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.5',  -- 文件检索
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  use 'voldikss/vim-translator' -- 翻译插件
 
   if packer_bootstrap then
     require('packer').sync()

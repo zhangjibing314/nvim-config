@@ -13,6 +13,7 @@ require("mason-lspconfig").setup({
     ensure_installed = {
         "clangd",
     },
+    automatic_installation = true,
 })
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
