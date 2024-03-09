@@ -2,24 +2,24 @@ translator_target_lang = 'zh'
 -- Type |String|
 -- Refer to https://github.com/voldikss/vim-translator/wiki
 -- Default: 'zh'
-translator_source_lang = 'auto'
+translator_source_lang = 'en'
 -- Type |String|
 -- Refer to https://github.com/voldikss/vim-translator/wiki
 -- Default: 'auto'
-translator_default_engines = 'haici'
+translator_default_engines = 'bing'
 -- Type |List| of |String|
 -- Available: 'bing', 'google', 'haici', 'iciba'(expired), 'sdcv',
 -- 'trans', 'youdao'
 -- Default: If translator_target_lang is 'zh', this will be
 -- ['bing', 'google', 'haici', 'youdao'], otherwise ['google']
 
-translator_proxy_url = ''
+--translator_proxy_url = ''
 -- Type |String|
 -- E.g.
 -- `let translator_proxy_url = 'socks5://127.0.0.1:1080'`
 -- Default: ''
 
-translator_history_enable = false
+--translator_history_enable = false
 -- Type |Boolean|
 -- Default: |v:false|
 
