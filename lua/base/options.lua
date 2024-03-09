@@ -4,8 +4,8 @@ opt.relativenumber = false
 opt.number = true
 
 -- 缩进
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 8
+opt.shiftwidth = 8
 opt.expandtab = true
 opt.autoindent = true
 
@@ -32,4 +32,4 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
-vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd[[colorscheme tokyonight-night]] -- tokyonight-[night storm day moon]
