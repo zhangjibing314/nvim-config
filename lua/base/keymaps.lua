@@ -28,9 +28,6 @@ local builtin = require('telescope.builtin')
 keymap.set('n', '<C-p>', builtin.find_files, {})
 keymap.set('n', '<C-f>', builtin.live_grep, {})
 -- lsp.clangd
---        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
---        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
---        vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.declaration()<CR>', { noremap = true, silent = true }) -- 声明位置
 vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', { noremap = true, silent = true }) -- 实现位置
 vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', { noremap = true, silent = true }) -- 引用位置
