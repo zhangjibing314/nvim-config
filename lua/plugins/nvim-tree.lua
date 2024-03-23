@@ -1,4 +1,5 @@
 -- 常用快捷键
+--`<C-]>`           CD                         |nvim-tree-api.tree.change_root_to_node()|
 --`a`               Create File Or Directory   |nvim-tree-api.fs.create()|
 --`d`               Delete                     |nvim-tree-api.fs.remove()|
 --`c`               Copy                       |nvim-tree-api.fs.copy.node()|
