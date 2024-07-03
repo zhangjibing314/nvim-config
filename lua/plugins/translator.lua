@@ -2,11 +2,11 @@ translator_target_lang = 'zh'
 -- Type |String|
 -- Refer to https://github.com/voldikss/vim-translator/wiki
 -- Default: 'zh'
-translator_source_lang = 'en'
+translator_source_lang = 'auto'
 -- Type |String|
 -- Refer to https://github.com/voldikss/vim-translator/wiki
 -- Default: 'auto'
-translator_default_engines = 'bing'
+--translator_default_engines = 'bing'
 -- Type |List| of |String|
 -- Available: 'bing', 'google', 'haici', 'iciba'(expired), 'sdcv',
 -- 'trans', 'youdao'

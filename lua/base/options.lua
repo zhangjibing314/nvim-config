@@ -1,4 +1,6 @@
 local opt = vim.opt
+-- 超出终端大小的行自动换行
+opt.wrap = true
 -- 行号
 opt.relativenumber = false
 opt.number = true
@@ -6,11 +8,8 @@ opt.number = true
 -- 缩进
 opt.tabstop = 8
 opt.shiftwidth = 8
-opt.expandtab = true
+opt.expandtab = false -- 不让空格代替tab
 opt.autoindent = true
-
--- 防止包裹
-opt.wrap = false
 
 -- 光标行
 opt.cursorline = true
