@@ -5,7 +5,7 @@ require("mason").setup({
             package_pending = "➜",
             package_uninstalled = "✗"
         }
-    }
+    },
 })
 
 require("mason-lspconfig").setup({
@@ -14,12 +14,10 @@ require("mason-lspconfig").setup({
         "clangd", -- c/c++ lsp
         "pyright", -- python lsp
     },
-    automatic_installation = true,
+    automatic_installation = false,
 })
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require("lspconfig").clangd.setup {
-    capabilities = capabilities,
 }
 
 require("lspconfig").pyright.setup {

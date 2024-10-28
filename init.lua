@@ -4,7 +4,7 @@ require("plugins-manager")
 -- 插件配置
 require("plugins.lualine")
 require("plugins.nvim-tree") -- 目录
-require("plugins.mason")
+require("plugins.lsp")
 require("plugins.cmp") -- 代码补全
 require("plugins.comment")
 require("plugins.autopairs")

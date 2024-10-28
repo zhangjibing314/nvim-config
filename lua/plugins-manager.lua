@@ -39,9 +39,9 @@ return require('packer').startup(function(use)
   }
   use "christoomey/vim-tmux-navigator" -- 用ctl-hjkl来定位窗口
   use {
+    "neovim/nvim-lspconfig",
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",  -- 这个相当于mason.nvim和lspconfig的桥梁
-    "neovim/nvim-lspconfig"
   }
   --  -- 自动补全
   use "hrsh7th/nvim-cmp"
