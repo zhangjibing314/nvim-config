@@ -67,6 +67,10 @@ return require('packer').startup(function(use)
   use 'voldikss/vim-translator' -- 翻译插件
   use "lukas-reineke/indent-blankline.nvim" -- 代码缩进线
 
+  use {'nvim-treesitter/nvim-treesitter', run = 'TSUdate'} --代码高亮
+
+  use 'mfussenegger/nvim-dap' -- debug
+
   if packer_bootstrap then
     require('packer').sync()
   end
