@@ -14,6 +14,7 @@ require("plugins.telescope") -- 文件&&字符串检索
 require("plugins.translator")
 require("plugins.indent-blankline")
 require("plugins.treesitter")
+require("plugins.markdown-preview")
 
 -- 基础配置
 require("base.options")
