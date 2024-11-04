@@ -13,7 +13,7 @@ require("mason-lspconfig").setup({
     ensure_installed = {
         "clangd", -- c/c++ lsp
         "pyright", -- python lsp
-	"lua_ls", -- lua-language-server
+	"lua_ls", -- 即lua-language-server --lua
     },
     automatic_installation = false,
 })
