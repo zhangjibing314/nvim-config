@@ -71,11 +71,19 @@ return require('packer').startup(function(use)
 
   use 'mfussenegger/nvim-dap' -- debug
 
-  -- markdown-preview
-  -- 在安装完该插件后，若无法使用，则需进入'~/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim/app',
-  -- 手动运行 install.sh 脚本
-  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
---  
+  --render-markdown
+  use({
+    'MeanderingProgrammer/render-markdown.nvim',
+    after = { 'nvim-treesitter' },
+    requires = { 'echasnovski/mini.nvim', opt = true }, -- if you use the mini.nvim suite
+    -- requires = { 'echasnovski/mini.icons', opt = true }, -- if you use standalone mini plugins
+    -- requires = { 'nvim-tree/nvim-web-devicons', opt = true }, -- if you prefer nvim-web-devicons
+    config = function()
+        require('render-markdown').setup({})
+    end,
+  })
+
+
   if packer_bootstrap then
     require('packer').sync()
   end
