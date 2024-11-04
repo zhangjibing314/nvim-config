@@ -17,5 +17,6 @@ require("plugins.treesitter")
 require("plugins.markdown-preview")
 
 -- 基础配置
+require("base.base")
 require("base.options")
 require("base.keymaps")
