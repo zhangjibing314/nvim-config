@@ -1,5 +1,6 @@
 -- 插件管理器
 require("config.lazy")
+--插件管理器配置
 require("config.lazy-config")
 -- 插件配置
 require("plugins.lualine")
