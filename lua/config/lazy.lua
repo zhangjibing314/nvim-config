@@ -26,7 +26,6 @@ require("lazy").setup({
 	spec = {
 		-- import your plugins
 		--{ import = "plugins" },
-		-------------------------------------------------------------------------------
 		{  -- 主题
 			"folke/tokyonight.nvim",
 			lazy = false,
@@ -46,9 +45,9 @@ require("lazy").setup({
 			dependencies = {
 				"nvim-tree/nvim-web-devicons", -- 文档树图标
 			},
-			config = function()
-				require("nvim-tree").setup {}
-			end,
+			--config = function()
+			--	require("nvim-tree").setup {}
+			--end,
 		},
 
 		{"christoomey/vim-tmux-navigator"}, -- 用ctl-hjkl来定位窗口
@@ -91,7 +90,7 @@ require("lazy").setup({
 
 		{'mfussenegger/nvim-dap'}, -- debug
 
-		--render-markdown
+		--显示markdown格式
 		{
 			'MeanderingProgrammer/render-markdown.nvim',
 			--dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
@@ -101,7 +100,6 @@ require("lazy").setup({
 			---@type render.md.UserConfig
 			opts = {},
 		},
-		-------------------------------------------------------------------------------
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.

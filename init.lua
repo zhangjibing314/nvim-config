@@ -15,8 +15,8 @@ require("plugins.telescope") -- 文件&&字符串检索
 require("plugins.translator")
 require("plugins.indent-blankline")
 require("plugins.treesitter")
---require("plugins.render-markdown")
 require("plugins.nvim-dap")
+require("plugins.image")
 -- 基础配置
 require("base.base")
 require("base.options")
