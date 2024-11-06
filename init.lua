@@ -1,6 +1,6 @@
 -- 插件管理器
-require("plugins-manager")
-
+require("config.lazy")
+require("config.lazy-config")
 -- 插件配置
 require("plugins.lualine")
 require("plugins.nvim-tree") -- 目录
@@ -16,7 +16,6 @@ require("plugins.indent-blankline")
 require("plugins.treesitter")
 --require("plugins.render-markdown")
 require("plugins.nvim-dap")
-
 -- 基础配置
 require("base.base")
 require("base.options")
