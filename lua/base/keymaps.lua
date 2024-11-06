@@ -33,3 +33,5 @@ vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', 
 vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', { noremap = true, silent = true }) -- 引用位置
 -- translator
 keymap.set("n", "tl", ":TranslateW<CR>")
+-- tagbar
+keymap.set("n", "<leader>w", ":Tagbar<CR>") --打开/关闭函数和变量列表

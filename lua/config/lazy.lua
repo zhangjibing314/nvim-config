@@ -100,6 +100,8 @@ require("lazy").setup({
 			---@type render.md.UserConfig
 			opts = {},
 		},
+
+		{"preservim/tagbar"}, --函数，变量列表
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
