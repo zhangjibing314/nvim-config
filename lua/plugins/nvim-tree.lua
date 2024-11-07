@@ -15,16 +15,19 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 require("nvim-tree").setup({
-    sort = {
-        sorter = "case_sensitive",
-    },
-    view = {
-        width = 30,
-    },
-    renderer = {
-        group_empty = true,
-    },
-    filters = {
-        dotfiles = true,
-    },
+	sort = {
+		sorter = "case_sensitive",
+	},
+	view = {
+		width = 30,
+	},
+	renderer = {
+		group_empty = true,
+		hidden_display = "all", --提示什么文件为显示
+	},
+	filters = {
+		enable = true,
+		git_ignored = false, --是否隐藏基于.gitignore的文件
+		dotfiles = false, --是否隐藏dotfile文件
+	},
 })
