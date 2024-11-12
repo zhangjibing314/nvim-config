@@ -102,6 +102,21 @@ require("lazy").setup({
 		},
 
 		{"preservim/tagbar"}, --函数，变量列表
+
+		{ -- 高亮指定的变量
+			"arsham/matchmaker.nvim",
+			dependencies = { "arsham/arshlib.nvim", "junegunn/fzf.vim" },
+			--config = true,
+			-- or to provide configuration
+			config = {
+				add     = "mm",
+				exact   = "me",
+				pattern = false,
+				line    = false,
+				clear   = "mc",
+				delete  = "md",
+			}
+		}
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
