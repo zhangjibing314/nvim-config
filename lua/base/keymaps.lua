@@ -27,10 +27,10 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- 打开/关闭目录
 local builtin = require('telescope.builtin')
 keymap.set('n', '<C-p>', builtin.find_files, {})
 keymap.set('n', '<C-f>', builtin.live_grep, {})
--- lsp.clangd
-vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.declaration()<CR>', { noremap = true, silent = true }) -- 声明位置
-vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', { noremap = true, silent = true }) -- 实现位置
-vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', { noremap = true, silent = true }) -- 引用位置
+keymap.set('n', 'gd', builtin.lsp_definitions, {}) --定义
+keymap.set('n', 'gi', builtin.lsp_implementations, {})
+keymap.set('n', 'gr', builtin.lsp_references, {}) --引用的位置列表
+keymap.set('n', 'tg', builtin.tags, {}) --通过tag文件查找标签
 -- translator
 keymap.set("n", "tl", ":TranslateW<CR>")
 -- tagbar
