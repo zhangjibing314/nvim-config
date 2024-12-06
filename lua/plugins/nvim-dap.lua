@@ -1,17 +1,15 @@
--------------------------------------------------------------------------------------------
----------------------------------------gdb调试---------------------------------------------
--------------------------------------------------------------------------------------------
 local dap = require("dap")
-
+--配置调试器
 dap.adapters.gdb = {
 	type = "executable",
 	command = "gdb",
 	args = { "--interpreter=dap", "--eval-command", "set print pretty on" }
 }
 
+--针对 .c 文件的调试配置
 dap.configurations.c = {
 	{
-		name = "Launch",
+		name = "debug-gdg",
 		type = "gdb",
 		request = "launch",
 		program = function()
@@ -19,28 +17,5 @@ dap.configurations.c = {
 		end,
 		cwd = "${workspaceFolder}",
 		stopAtBeginningOfMainSubprogram = false,
-	},
-	{
-		name = "Select and attach to process",
-		type = "gdb",
-		request = "attach",
-		program = function()
-			return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
-		end,
-		pid = function()
-			local name = vim.fn.input('Executable name (filter): ')
-			return require("dap.utils").pick_process({ filter = name })
-		end,
-		cwd = '${workspaceFolder}'
-	},
-	{
-		name = 'Attach to gdbserver :1234',
-		type = 'gdb',
-		request = 'attach',
-		target = 'localhost:1234',
-		program = function()
-			return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
-		end,
-		cwd = '${workspaceFolder}'
-	},
+	}
 }

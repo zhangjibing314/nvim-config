@@ -37,3 +37,13 @@ keymap.set('n', 'tg', builtin.tags, {}) --通过tag文件查找标签
 keymap.set("n", "tl", ":TranslateW<CR>")
 -- tagbar
 keymap.set("n", "<leader>w", ":Tagbar<CR>") --打开/关闭函数和变量列表
+-- nvim-dap 代码调试
+keymap.set('n', ';c', function() require('dap').continue() end) --启动调试/运行到下一个断点
+keymap.set('n', ';rc', function() require('dap').restart() end) --重启调试并运行到第一个断点处
+keymap.set('n', ';t', function() require('dap').terminate() end)  --终止调试
+keymap.set('n', ';b', function() require('dap').toggle_breakpoint() end) --打/取消断点
+keymap.set('n', ';db', function() require('dap').clear_breakpoints() end) --取消所有断点
+keymap.set('n', ';n', function() require('dap').step_over() end) --单步调试-不进入函数
+keymap.set('n', ';s', function() require('dap').step_into() end) --单步调试-进入函数
+keymap.set('n', ';;', function() require('dap').repl.toggle() end) -- 打开debug console
+

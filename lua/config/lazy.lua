@@ -71,7 +71,7 @@ require("lazy").setup({
 
 		{"windwp/nvim-autopairs"}, -- 自动补全括号
 
-		{"numToStr/Comment.nvim"}, -- gcc和gc注释
+		{"numToStr/Comment.nvim"}, -- v模式下添加/删除注释
 
 		{"akinsho/bufferline.nvim"}, -- buffer分割线
 
@@ -123,6 +123,6 @@ require("lazy").setup({
 	checker = {
 		enabled = true,
 		notify = true, -- get a notification when new updates are found
-		frequency = 1, -- check for updates every hour
+		frequency = 604800, -- 一周检测一次(7*24*60*60)
 	},
 })
