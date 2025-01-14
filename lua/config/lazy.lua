@@ -78,7 +78,7 @@ require("lazy").setup({
 		{"lewis6991/gitsigns.nvim"}, -- 左则git提示
 
 		{
-			'nvim-telescope/telescope.nvim', tag = '0.1.5',  -- 文件检索
+			'nvim-telescope/telescope.nvim', tag = '0.1.5',  -- 模糊查询
 			dependencies = { {'nvim-lua/plenary.nvim'} }
 		},
 
