@@ -29,12 +29,11 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- 打开/关闭目录
 local builtin = require('telescope.builtin')
 keymap.set('n', '<C-p>', builtin.find_files, {}) -- 搜索文件
 keymap.set('n', '<C-f>', builtin.live_grep, {}) -- 搜索字符串
-keymap.set('n', 'gd', builtin.lsp_definitions, {}) --定义
-keymap.set('n', 'gi', builtin.lsp_implementations, {}) -- 实现
+keymap.set('n', 'gd', ":lua vim.lsp.buf.declaration()<CR>") -- 声明
+keymap.set('n', 'gi', builtin.lsp_definitions, {}) --定义
 keymap.set('n', 'gr', builtin.lsp_references, {}) --引用的位置列表
 keymap.set('n', 'tg', builtin.tags, {}) -- 在列出tags文件的内容后搜索
 keymap.set('n', 'ts', builtin.tagstack, {}) -- 当前窗口的 tag 栈
-keymap.set('n', '<leader>p', builtin.jumplist, {}) -- 
 -- tags文件 跳转
 -- <C-p>
 -- g] 有多个定义时列出匹配列表
