@@ -88,8 +88,6 @@ require("lazy").setup({
 
 		{'nvim-treesitter/nvim-treesitter', run = 'TSUdate'}, --代码高亮
 
-		{'mfussenegger/nvim-dap'}, -- debug
-
 		--显示markdown格式
 		-- install without yarn or npm
 		{
