@@ -10,7 +10,7 @@
 │   ├── base
 │   │   ├── keymaps.lua         --快捷键映射
 │   │   └── options.lua         --配置选项
-│   ├── config
+│   ├── manager
 │   │   ├── lazy-config.lua     --对lazy插件管理器的配置
 │   │   └── lazy.lua            --用插件管理器安装插件
 │   └── plugins                 --各个插件的配置

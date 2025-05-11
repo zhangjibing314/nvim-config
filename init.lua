@@ -1,7 +1,7 @@
 -- 插件管理器
-require("config.lazy")
+require("manager.lazy")
 --插件管理器配置
-require("config.lazy-config")
+require("manager.lazy-config")
 -- 插件配置
 require("plugins.lualine")
 require("plugins.nvim-tree") -- 目录
