@@ -16,6 +16,5 @@ require("plugins.translator")
 require("plugins.indent-blankline")
 require("plugins.treesitter")
 -- 基础配置
-require("base.base")
 require("base.options")
 require("base.keymaps")

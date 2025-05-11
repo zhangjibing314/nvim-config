@@ -8,7 +8,6 @@
 ├── LICENSE
 ├── lua
 │   ├── base
-│   │   ├── base.lua            --基础配置
 │   │   ├── keymaps.lua         --快捷键映射
 │   │   └── options.lua         --配置选项
 │   ├── config
