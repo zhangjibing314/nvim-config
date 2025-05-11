@@ -1,5 +1,5 @@
 return {
-  root = vim.fn.stdpath("data") .. "/lazy", -- directory where plugins will be installed
+  root = vim.fn.stdpath("data") .. "/lazy/lazy.nvim", -- directory where plugins will be installed
   defaults = {
     -- Set this to `true` to have all your plugins lazy-loaded by default.
     -- Only do this if you know what you are doing, as it can lead to unexpected behavior.

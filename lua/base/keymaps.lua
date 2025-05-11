@@ -10,7 +10,7 @@ keymap.set("i", "jl", "<ESC>")
 --keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 --keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
--- ---------- 正常模式 ---------- ---
+-- ---------- 普通模式 ---------- ---
 -- 窗口
 keymap.set("n", "<leader>s", "<C-w>v") -- 水平新增窗口 
 keymap.set("n", "<leader>v", "<C-w>s") -- 垂直新增窗口
