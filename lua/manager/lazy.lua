@@ -89,14 +89,22 @@ require("lazy").setup({
 		{'nvim-treesitter/nvim-treesitter', run = 'TSUdate'}, --代码高亮
 
 		--显示markdown格式
-		-- install without yarn or npm
+		-- -- install without yarn or npm
+		-- {
+		-- 	"iamcco/markdown-preview.nvim",
+		-- 	cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+		-- 	ft = { "markdown" },
+		-- 	build = function() vim.fn["mkdp#util#install"]() end,
+		-- },
 		{
-			"iamcco/markdown-preview.nvim",
-			cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-			ft = { "markdown" },
-			build = function() vim.fn["mkdp#util#install"]() end,
+			'MeanderingProgrammer/render-markdown.nvim',
+			-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
+			-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+			dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+			---@module 'render-markdown'
+			---@type render.md.UserConfig
+			opts = {},
 		},
-
 		{"preservim/tagbar"}, --函数，变量列表
 
 		{ -- 高亮指定的变量
